@@ -26,7 +26,7 @@ body {
     min-height: 100%;
     /* The image used for the site background. Try changing skyscape.jpg to stars.jpg. Put a replacement photo in the images folder and, in line 21 below, replace skyscape.jpg with yourbackgroundfilename.jpg */
     /* The linear gradient darkens the image, like putting a sunglasses lens on top of it. If you want to darken the image even more, change 0.1 (both times) to 0.3 or higher */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hades_background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/green_background.png);
     /* Prevents the browser from repeating or "tiling" the background image */
     background-repeat: no-repeat;
     background-position: center;
@@ -108,12 +108,14 @@ img {
     text-align: center;
 }
 
+
+
 .button, .external-link {
     border: 1px solid var(--primaryText);
     border-radius: 20px;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal; /* Change this from nowrap to normal */
     display: inline-block;
     background-color: var(--primary);
     cursor: pointer;
@@ -164,12 +166,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: .5em 1em; /* Add padding for consistent sizing */
     margin: .5em auto 1.5em auto;
     text-decoration: none;
     color: inherit;
-    height: 2em;
-    width: 6em;
+    height: 2em; /* Change from 2em to auto (or just remove the line) */
+    width: auto; 
 }
 
 .external-link:hover {
